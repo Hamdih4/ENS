@@ -1,0 +1,23 @@
+{
+  "name": "ens",
+  "version": "1.0.0",
+  "description": "Email Notification Service",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamdih4/ENS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hamdih4/ENS/issues"
+  },
+  "homepage": "https://github.com/Hamdih4/ENS#readme",
+  "dependencies": {
+    "cron": "^1.2.1",
+    "nodemailer": "^3.1.7"
+  }
+}
