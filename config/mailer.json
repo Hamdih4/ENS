@@ -1,0 +1,10 @@
+{
+  "mailer": {
+    "service": "gmail",
+    "auth": {
+      "user": "att.sdk.m2x.dev.1@gmail.com",
+      "pass": "6haC=xj9<n/$](Sp"
+    },
+    "subject": "DVAS test scripts failure!"
+  }
+}
