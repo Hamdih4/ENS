@@ -4,6 +4,10 @@
   "description": "Email Notification Service",
   "main": "main.js",
   "scripts": {
+    "start": "babel-node main.js --presets es2015,stage-2",
+    "build": "babel dist/index.js",
+    "run": "node dist/index.js",
+    "dist": "babel main2.js --out-file dist/main.js --presets=es2015",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +23,10 @@
   "dependencies": {
     "cron": "^1.2.1",
     "nodemailer": "^3.1.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0"
   }
 }
