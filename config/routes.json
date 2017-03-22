@@ -1,0 +1,9 @@
+{
+  "routes": [{
+    "path": "/failure",
+    "method": "get"
+  }, {
+    "path": "/regular",
+    "method": "get"
+  }]
+}

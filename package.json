@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Hamdih4/ENS#readme",
   "dependencies": {
     "cron": "^1.2.1",
+    "express": "^4.15.2",
     "nodemailer": "^3.1.7"
   },
   "devDependencies": {
