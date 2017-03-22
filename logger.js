@@ -1,12 +1,12 @@
 export default class Logger {
 
-  debug(text, obj) {
+  debug (text, obj) {
     console.info(text);
 
     if (obj) console.trace(obj);
   }
 
-  info(text) {
+  info (text) {
     console.info(text);
   }
 
