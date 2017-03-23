@@ -1,0 +1,6 @@
+{
+  "global": {
+    "name": "Email Notification Server",
+    "loglevel": "debug"
+  }
+}

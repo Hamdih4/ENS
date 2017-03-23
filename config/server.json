@@ -1,5 +1,6 @@
 {
   "server": {
-    "port": "1890"
+    "port": "1890",
+    "loglevel": "info"
   }
 }

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Hamdih4/ENS#readme",
   "dependencies": {
+    "colors": "^1.1.2",
     "cron": "^1.2.1",
     "express": "^4.15.2",
     "nodemailer": "^3.1.7"

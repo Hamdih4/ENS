@@ -6,7 +6,7 @@ let fs = require('fs');
 let config = require('./config/mailer.json').mailer;
 let contacts = require('./config/contacts.json').contacts;
 
-let log = new Logger();
+let log = new Logger(config.loglevel);
 
 let emailTemplateFile = './templates/email.html';
 let emailTemplate = fs.readFileSync(emailTemplateFile, 'utf8');
@@ -15,7 +15,7 @@ let transporter;
 function handleEmail (error, info) {
 
   if (error) {
-    log.debug('Error sending email!', error);
+    log.error('Error sending email!', error);
     return;
   }
 
@@ -25,7 +25,7 @@ function handleEmail (error, info) {
 function handleEmailTemplateFile (error, data) {
 
   if (error) {
-    log.debug('Error reading file!', error);
+    log.error('Error reading file!', error);
     return;
   }
 
@@ -47,13 +47,17 @@ export default class Mailer {
   sendNotification (content, isRegular) {
 
     if (isRegular) {
+      log.info('Sending Regular Email');
       this.emailOptions.to = contacts.regular.toSring()
     }
 
     if (content) {
+      log.debug('Found new content');
+      log.trace('content', content);
       this.emailOptions.html = content;
     }
 
+    log.debug('Sending email to contacts:', this.emailOptions.to);
     this.transporter.sendMail(this.emailOptions, handleEmail);
   }
 

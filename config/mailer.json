@@ -5,6 +5,7 @@
       "user": "att.sdk.m2x.dev.1@gmail.com",
       "pass": "6haC=xj9<n/$](Sp"
     },
-    "subject": "DVAS test scripts failure!"
+    "subject": "DVAS test scripts failure!",
+    "loglevel": "info"
   }
 }
